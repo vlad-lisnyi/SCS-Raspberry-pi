@@ -48,7 +48,7 @@ then
 fi
 
 sudo chmod -R 7777 '/'${PWD#*/}
-sudo chown -R pi '/'${PWD#*/}
+sudo chown -R $USER '/'${PWD#*/}
 sudo chmod -R 7777 '/etc/rc.local'
 
 
