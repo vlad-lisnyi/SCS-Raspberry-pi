@@ -47,9 +47,9 @@ then
     sudo python3 setup_rclocal.py
 fi
 
-sudo chmod -R 7777 '/'${PWD#*/}
+sudo chmod -R 777 '/'${PWD#*/}
 sudo chown -R $USER '/'${PWD#*/}
-sudo chmod -R 7777 '/etc/rc.local'
+sudo chmod -R 777 '/etc/rc.local'
 
 
 sudo python3 setup.py install
