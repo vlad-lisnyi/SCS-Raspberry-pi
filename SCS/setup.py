@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #from distutils.core import setup
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(name='SCS',
@@ -11,6 +11,6 @@ setup(name='SCS',
     author_email='',
     url='https://scsshield.altervista.org/',
     install_requires=['janus', 'asyncserial', 'asyncio_mqtt', 'tinydb', 'gmqtt', 'uvloop', 'tornado', 'paho-mqtt'],
-    #packages=['janus', 'asyncserial', 'asyncio_mqtt', 'tinydb', 'gmqtt', 'uvloop'],
-    python='>=3.6, <4',
+    packages=find_packages(),
+    python_requires='>=3.6, <4',
     )
